@@ -8,20 +8,20 @@
        ENVIRONMENT DIVISION.
        DATA DIVISION.
        WORKING-STORAGE SECTION.
-       77 WS-OPCAO  PIC X.
-       77 WS-MODULO PIC X(30).
+       77 WRK-OPCAO  PIC X.
        SCREEN SECTION.
-       01 SS-CLS.
-           05 SS-FILLER.
+       01 TELA.
+           05 LIMPA-TELA.
                10 BLANK SCREEN.
                10 LINE 01 COLUMN 01 ERASE EOL
                   BACKGROUND-COLOR 1.
-           05 SS-CABECALHO.
-               10 LINE 01 COLUMN 02 PIC X(30) FROM WS-MODULO
-                  FOREGROUND-COLOR 6
-                  BACKGROUND-COLOR 1.                  
-
-       01 SS-MENU FOREGROUND-COLOR 6.
+     ***********************************
+     ** TESTAR OUTRAS FORMAS DE PREENCHIMENTO DE TELA
+     ** LINHA 3 VERMELHA - DEIXAR SEM PIC X(3) - VEM UM CARACTER APENAS - PRECISA DECLARAR X(3)
+     ***********************************
+     **          10 LINE 03 COLUMN 01 PIC X(30) ERASE EOL
+     **             BACKGROUND-COLOR 4 FROM WRK-MODULO.                              
+       01 MENU FOREGROUND-COLOR 6.
            05 LINE 07 COLUMN 15 VALUE "1 - INCLUIR".
            05 LINE 08 COLUMN 15 VALUE "2 - CONSULTAR".
            05 LINE 09 COLUMN 15 VALUE "3 - ALTERAR".
@@ -29,10 +29,10 @@
            05 LINE 11 COLUMN 15 VALUE "5 - RELATORIOS".
            05 LINE 12 COLUMN 15 VALUE "X - ENCERRAR".
            05 LINE 13 COLUMN 15 VALUE "OPCAO: ".
-           05 LINE 13 COLUMN 23 USING WS-OPCAO.
+           05 LINE 13 COLUMN 23 USING WRK-OPCAO.
        PROCEDURE DIVISION.
-       INICIO.
-             MOVE 'MENU' TO WS-MODULO.
-               DISPLAY SS-CLS.
-               ACCEPT SS-MENU.
+       000-INICIO.
+               DISPLAY TELA.
+               ACCEPT MENU.
            STOP RUN.
+
