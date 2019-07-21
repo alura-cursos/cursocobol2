@@ -17,7 +17,6 @@
                10 CLIENTES-FONE PIC 9(09) BLANK WHEN ZEROS.
            05 CLIENTES-NOME     PIC X(40).
            05 CLIENTES-EMAIL    PIC X(50).
-           05 CLIENTES-TELEFONE PIC X(11).           
            05 FILLER            PIC X(20).        
  
        
