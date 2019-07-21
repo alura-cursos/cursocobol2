@@ -1,5 +1,10 @@
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. CLIENTES.
+       PROGRAM-ID. MENUCLI.
+      ***********************************************
+      ** OBJETIVO: CONSTRUCAO DA TELA DE MENU
+      ** CONHECIMENTO TRABALHADO: SCREEN SECTION.
+      ** AUTHOR: IVAN  - DATA: XX/XX/XXXX
+      ************************************************
        ENVIRONMENT DIVISION.
        DATA DIVISION.
        WORKING-STORAGE SECTION.
@@ -30,16 +35,4 @@
              MOVE 'MENU' TO WS-MODULO.
                DISPLAY SS-CLS.
                ACCEPT SS-MENU.
-               EVALUATE WS-OPCAO
-                   WHEN 1
-                       CONTINUE
-                   WHEN 2
-                       CONTINUE
-                   WHEN 3
-                       CONTINUE
-                   WHEN 4
-                       CONTINUE
-                   WHEN 5
-                       CONTINUE
-               END-EVALUATE
            STOP RUN.
