@@ -20,7 +20,8 @@
      ** LINHA 3 VERMELHA - DEIXAR SEM PIC X(3) - VEM UM CARACTER APENAS - PRECISA DECLARAR X(3)
      ***********************************
      **          10 LINE 03 COLUMN 01 PIC X(30) ERASE EOL
-     **             BACKGROUND-COLOR 4 FROM WRK-MODULO.                              
+     **             BACKGROUND-COLOR 4 FROM 'TEXTO'  -> PODE SER VARIAVEL TAMBEM.
+     
        01 MENU FOREGROUND-COLOR 6.
            05 LINE 07 COLUMN 15 VALUE "1 - INCLUIR".
            05 LINE 08 COLUMN 15 VALUE "2 - CONSULTAR".
