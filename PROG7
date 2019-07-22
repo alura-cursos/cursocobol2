@@ -162,29 +162,7 @@
                                 ACCEPT MOSTRA-ERRO
                               END-DELETE.
             PERFORM 000-INICIO.
-            
-       0500-RELATORIO.
-      *     MOVE 'CONSULTA ' TO  WRK-MODULO.
-            DISPLAY LIMPA-TELA.
-            DISPLAY TELA-REGISTRO.
-            ACCEPT CHAVE.
-               READ CLIENTES
-               INVALID KEY
-                       MOVE "CLIENTE NÃO ENCONTRADO" TO WRK-MSGERRO
-               NOT INVALID KEY
-
-                       MOVE 'CLIENTE ENCONTRADO    ' TO WRK-MSGERRO
-                       DISPLAY DADOS
-               END-READ
-                       DISPLAY MOSTRA-ERRO.
-                       ACCEPT WRK-TECLA.
-            PERFORM 000-INICIO.            
-            
-            
-            
-            
-            
-
+  
        9000-ABRIR-ARQUIVOS.
             OPEN I-O CLIENTES
             IF CLIENTES-STATUS = 35  THEN
