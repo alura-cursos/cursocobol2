@@ -29,3 +29,20 @@ Aula 7 - Relatorio (PROG8 e PROG9)
     Leitura de todos os registros do arquivo - Saida em Tela
     Comandos Start, Read next e  Perform com File Status
      Gravaçao dos registros lidos em um arquivo sequencial
+     
+     
+                          ADD 1 TO WRK-CONTADOR
+                        IF WRK-CONTADOR > 4
+                            MOVE 'PRESSIONE ALGUMA TECLA' TO WRK-MSGERRO
+                            ACCEPT MOSTRA-ERRO
+                            MOVE 'MODULO - RELATORIO ' TO WRK-MODULO
+                            DISPLAY TELA
+                             DISPLAY '   RELATORIO DE CLIENTES '
+                             DISPLAY '----------------------'
+                             COMPUTE WRK-CONTADOR = 0 
+                        END-IF  
+                        
+                        
+                        
+                        
+                        
