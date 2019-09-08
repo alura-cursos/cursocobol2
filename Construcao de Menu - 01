@@ -1,0 +1,26 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID.  CLIENTES.
+      *********************************
+      * OBJETIVO:  SISTEMA DE GESTAO DE CLIENTES
+      * AUTHOR  :  IVAN
+      ********************************* 
+       ENVIRONMENT DIVISION.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       77 WRK-OPCAO  PIC X(1).
+       
+       
+       SCREEN SECTION.
+       01 TELA.
+            05 LIMPA-TELA.
+                10 BLANK SCREEN.
+                10 LINE 01 COLUMN 01  ERASE EOL 
+                   BACKGROUND-COLOR 2.
+                
+
+            
+       PROCEDURE DIVISION.
+            DISPLAY TELA.
+            ACCEPT MENU.
+            STOP RUN.
+            
